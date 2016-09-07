@@ -17,6 +17,10 @@ int main(void)
 	multiset<int> miset(ivec.cbegin(),ivec.cend());
 	cout << iset.size() << endl;
 	cout << miset.size() << endl;
+
+	cout << ivec.back();
+
+
 	// s.insert(1);
 	// for(auto it = s.begin(); it != s.end(); it++)
 	// {

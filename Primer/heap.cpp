@@ -14,24 +14,25 @@ int main()
 	cout << "initial max heap : " << v.front() << endl; //30
 
 	pop_heap(v.begin(),v.end());
-	v.pop_back();
-	cout << "max heap after pop : " << v.front() << endl;//20
+	cout << "back after pop : " << v.back() << endl; //30
+	v.pop_back(); //不返回值
+	// cout << "max heap after pop : " << v.front() << endl;//20
 	cout << "back after pop : " << v.back() << endl; //5
 
 
-	v.push_back(99); 
-	push_heap(v.begin(),v.end()); 
-	cout << "max heap after push : " << v.front() << endl;//99
-	cout << "back after push : " << v.back() << endl; //15
+	// v.push_back(99); 
+	// push_heap(v.begin(),v.end()); 
+	// cout << "max heap after push : " << v.front() << endl;//99
+	// cout << "back after push : " << v.back() << endl; //15
 
-	sort_heap(v.begin(),v.end());
-	cout << "back after sort : " << v.back() << endl; // 99
-	cout << "front after sort: " << v.front() << endl;//5
-	cout<< "final sorted range: ";
-	for(int i = 0; i < v.size(); i++)
-	{
-		cout << ' ' << v[i]; // 5 10 15 20 99
-	}
-	cout << endl;
+	// sort_heap(v.begin(),v.end());
+	// cout << "back after sort : " << v.back() << endl; // 99
+	// cout << "front after sort: " << v.front() << endl;//5
+	// cout<< "final sorted range: ";
+	// for(int i = 0; i < v.size(); i++)
+	// {
+	// 	cout << ' ' << v[i]; // 5 10 15 20 99
+	// }
+	// cout << endl;
 	return 0;
 }
