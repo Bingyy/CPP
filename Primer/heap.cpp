@@ -30,7 +30,7 @@ int main()
 	cout<< "final sorted range: ";
 	for(int i = 0; i < v.size(); i++)
 	{
-		cout << ' ' << v[i];
+		cout << ' ' << v[i]; // 5 10 15 20 99
 	}
 	cout << endl;
 	return 0;
