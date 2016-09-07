@@ -73,3 +73,14 @@ void MakeMinHeap(int a[], int n)
 		MinHeapFixdown(a,i,n);//从任意结点开始调整的代码，用的不是Up那个
 	}
 }
+
+// 借助堆的以上操作，很容易实现堆排序
+// 比如，递减排序，每次把堆顶与最后一个元素交换，再对其他元素进行堆调整即可
+void MinHeapSortToDes(int a[], int n)
+{
+	for(int i = n - 1; i >= 1; i--)
+	{
+		Swap(a[i],a[0]);
+		MinHeapFixdown(a,0,i);
+	}
+}
